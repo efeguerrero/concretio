@@ -1,0 +1,79 @@
+---
+import balzer from '../../../public/assets/images/equipo/equipoBalzer.png';
+import raccone from '../../../public/assets/images/equipo/equipoRaccone.png';
+import erramuspe from '../../../public/assets/images/equipo/equipoErramuspe.png';
+---
+
+<section class="pt-20 pb-8 px-9 font-montserrat">
+  <h2 class="section-title mb-6">equipo</h2>
+  <h3 class="section-highlight mb-6">Somos CONCRETIO.</h3>
+  <p class="section-text mb-2">
+    Explorá nuestras innovadoras propuestas arquitectónicas que se destacan por
+    la creatividad de su diseño
+  </p>
+  <div class="container mx-auto">
+    <h2
+      class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"
+    >
+      Our Team
+    </h2>
+
+    <div
+      class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 font-franklin"
+    >
+      <div class="w-full max-w-xs text-center">
+        <img
+          class="object-cover object-center aspect-square mx-auto mb-4"
+          src={balzer}
+          alt="Foto de Perfil Arquitecto Federico Balzer"
+        />
+
+        <div class="mt-2">
+          <h3
+            class="text-sm text-left font-medium border-l-2 border-gray-900 pl-3 py-1"
+          >
+            MG. Arq. Federico Balzer
+          </h3>
+        </div>
+      </div>
+
+      <div class="w-full max-w-xs text-center">
+        <img
+          class="object-cover object-center aspect-square mx-auto mb-4"
+          src={raccone}
+          alt="Foto de Perfil Arquitecto Federico Balzer"
+        />
+
+        <div class="mt-2">
+          <h3
+            class="text-sm text-left font-medium border-l-2 border-gray-900 pl-3 py-1"
+          >
+            MG. Arq. Santiago Raccone
+          </h3>
+        </div>
+      </div>
+
+      <div class="w-full max-w-xs text-center">
+        <img
+          class="object-cover object-center aspect-square mx-auto mb-4"
+          src={erramuspe}
+          alt="Foto de perfil Doctor Erramuspe"
+        />
+
+        <div class="mt-2">
+          <h3
+            class="text-sm text-left font-medium border-l-2 border-gray-900 pl-3 py-1"
+          >
+            Dr. Martín Erramuspe
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .teamImg {
+    object-view-box: inset(40% 20% 20% 40%);
+  }
+</style>
