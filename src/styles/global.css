@@ -14,6 +14,7 @@ img {
 
 label,
 button,
+a,
 select,
 summary,
 [type='radio'],
@@ -29,11 +30,11 @@ summary,
 }
 
 .section-highlight {
-  @apply text-3xl text-gray-900 font-light font-montserrat;
+  @apply text-3xl font-light font-montserrat;
 }
 
 .section-text {
-  @apply font-light text-lg font-montserrat;
+  @apply font-normal text-lg font-montserrat;
 }
 
 .btn {
