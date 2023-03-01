@@ -1,5 +1,6 @@
 ---
 import Sociales from './comunes/sociales.astro';
+import logoConcretio from '../../public/assets/images/institucional/logo-concretio-v2.png';
 ---
 
 <footer class="bg-white container">
@@ -8,11 +9,7 @@ import Sociales from './comunes/sociales.astro';
       <div class="w-full mx-auto lg:w-2/5">
         <div class="px-6">
           <a href="#">
-            <img
-              class="w-auto h-7 mx-auto my-6"
-              src="https://merakiui.com/images/full-logo.svg"
-              alt=""
-            />
+            <img class="w-60 h-auto mx-auto my-6" src={logoConcretio} alt="" />
           </a>
           <h2
             class="text-4xl lg:text-5xl xl:text-7xl mb-4 text-gray-900 font-light text-center"
@@ -31,13 +28,22 @@ import Sociales from './comunes/sociales.astro';
     </div>
 
     <hr class="h-px my-6 bg-gray-300 border-none" />
-    <div id="rights"></div>
+    <div class="font-franklin text-sm">
+      <div id="rights"></div>
+      <p class="text-center text-gray-500 mt-2">
+        Diseñado por <a
+          href="https://brasa.agency/"
+          target="_blank"
+          class="font-bold text-blue-700">Brasa Agency</a
+        >
+      </p>
+    </div>
   </div>
 </footer>
 
 <script>
-  //Current Year Calculation
-  const year = new Date().getSeconds().toString();
+  //Current Year Calculation as a script to be executed on client-side
+  const year = new Date().getFullYear().toString();
   const rights = document.querySelector('#rights');
 
   rights.innerHTML = `<p  class="text-sm text-center text-gray-500">
