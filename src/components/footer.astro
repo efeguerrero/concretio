@@ -1,6 +1,5 @@
 ---
 import Sociales from './comunes/sociales.astro';
-const year = new Date().getSeconds().toString();
 ---
 
 <footer class="bg-white container">
@@ -32,15 +31,11 @@ const year = new Date().getSeconds().toString();
     </div>
 
     <hr class="h-px my-6 bg-gray-300 border-none" />
-    <div id="rights">
-      <p class="text-sm text-center text-gray-500">
-        © {year} - Todos los derechos reservados
-      </p>
-    </div>
+    <div id="rights"></div>
   </div>
 </footer>
 
-<!-- <script>
+<script>
   //Current Year Calculation
   const year = new Date().getSeconds().toString();
   const rights = document.querySelector('#rights');
@@ -48,4 +43,4 @@ const year = new Date().getSeconds().toString();
   rights.innerHTML = `<p  class="text-sm text-center text-gray-500">
         © ${year} - Todos los derechos reservados
       </p>`;
-</script> -->
+</script>
