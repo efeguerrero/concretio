@@ -1,4 +1,5 @@
 ---
+//Astro Component Imports
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/hero.astro';
 import About from '../components/about.astro';
@@ -6,8 +7,10 @@ import Invertir from '../components/invertir/invertir.astro';
 import Cta from '../components/cta.astro';
 import Proyectos from '../components/proyectos/proyectos.astro';
 import Equipo from '../components/equipo.astro';
-import Contacto from '../components/contacto/contacto.astro';
 import Footer from '../components/footer.astro';
+import Contacto from '../components/contacto/contacto.astro';
+
+//React Components Imports
 ---
 
 <Layout title="Welcome to Astro.">
@@ -18,7 +21,7 @@ import Footer from '../components/footer.astro';
     <Cta />
     <Proyectos />
     <Equipo />
-    <Contacto />
+    <Contacto client:visible />
     <Footer />
   </main>
 </Layout>
