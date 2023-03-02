@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import raccone from '../../public/assets/images/equipo/equipoRaccone.png';
 import balzer from '../../public/assets/images/equipo/equipoBalzer.png';
 import erramuspe from '../../public/assets/images/equipo/equipoErramuspe.png';
@@ -23,11 +24,17 @@ import erramuspe from '../../public/assets/images/equipo/equipoErramuspe.png';
       class="grid gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 font-franklin justify-center"
     >
       <div class="w-full max-w-xs text-center">
+        <Image
+          src={balzer}
+          format="avif"
+          alt="Foto de Perfil Arquitecto Federico Balzer"
+        />
+        <!-- 
         <img
           class="object-cover object-center aspect-square mx-auto mb-4"
           src={balzer}
           alt="Foto de Perfil Arquitecto Federico Balzer"
-        />
+        /> -->
 
         <div class="mt-2">
           <h3
@@ -39,11 +46,16 @@ import erramuspe from '../../public/assets/images/equipo/equipoErramuspe.png';
       </div>
 
       <div class="w-full max-w-xs text-center">
-        <img
+        <Image
+          src={raccone}
+          format="avif"
+          alt="Foto de Perfil Arquitecto Federico Balzer"
+        />
+        <!-- <img
           class="object-cover object-center aspect-square mx-auto mb-4"
           src={raccone}
           alt="Foto de Perfil Arquitecto Federico Balzer"
-        />
+        /> -->
 
         <div class="mt-2">
           <h3
@@ -55,11 +67,16 @@ import erramuspe from '../../public/assets/images/equipo/equipoErramuspe.png';
       </div>
 
       <div class="w-full max-w-xs text-center">
-        <img
+        <Image
+          src={erramuspe}
+          format="avif"
+          alt="Foto de perfil Doctor Erramuspe"
+        />
+        <!-- <img
           class="object-cover object-center aspect-square mx-auto mb-4"
           src={erramuspe}
           alt="Foto de perfil Doctor Erramuspe"
-        />
+        /> -->
 
         <div class="mt-2">
           <h3

@@ -6,6 +6,8 @@ import icon4 from '../../../public/assets/icons/icon4.png';
 import icon5 from '../../../public/assets/icons/icon5.png';
 import icon6 from '../../../public/assets/icons/icon6.png';
 
+import { Image } from '@astrojs/image/components';
+
 const items = [
   {
     icon: icon1,
@@ -36,10 +38,18 @@ const items = [
     items.map((item) => {
       return (
         <div class="flex flex-col justify-center align-middle">
-          <img class="w-24 h-24 self-center" src={item.icon} alt="" />
+          <Image
+            src={item.icon}
+            class="w-24 h-24 self-center"
+            alt=""
+            format="avif"
+          />
+
           <h3 class="text-center">{item.text}</h3>
         </div>
       );
     })
   }
 </div>
+
+<!-- <img class="w-24 h-24 self-center" src={item.icon} alt="" /> -->

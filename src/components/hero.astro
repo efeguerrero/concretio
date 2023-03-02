@@ -1,3 +1,8 @@
+---
+import { Image } from '@astrojs/image/components';
+import hero from '../../public/assets/images/hero.jpg';
+---
+
 <section class="text-gray-600 body-font">
   <div
     class="md:container mx-auto flex md:px-5 py-24 md:flex-row flex-col items-center font-montserrat"
@@ -33,11 +38,17 @@
       </div>
     </div>
     <div class="lg:max-w-2xl">
-      <img
+      <Image
+        src={hero}
+        alt=""
+        class="object-cover object-center"
+        format="avif"
+      />
+      <!-- <img
         class="object-cover object-center"
         alt="hero"
         src="https://concretio.com.ar/wp-content/uploads/2022/07/head-v5.jpg"
-      />
+      /> -->
     </div>
   </div>
 </section>

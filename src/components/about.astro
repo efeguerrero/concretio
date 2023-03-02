@@ -1,3 +1,8 @@
+---
+import { Image } from '@astrojs/image/components';
+import skyscrapers from '../../public/assets/images/skyscrapers.jpg';
+---
+
 <section
   class="md:container mx-auto flex flex-col md:flex-row md:justify-center"
 >
@@ -38,10 +43,16 @@
     >
   </div>
   <div class="md:w-1/2">
-    <img
+    <Image
+      src={skyscrapers}
+      alt=""
+      format="avif"
+      class="object-cover object-center w-full"
+    />
+    <!-- <img
       class="object-cover object-center w-full"
       alt="hero"
       src="https://concretio.com.ar/wp-content/uploads/2022/07/img1b.jpg"
-    />
+    /> -->
   </div>
 </section>

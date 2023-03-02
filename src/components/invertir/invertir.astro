@@ -1,4 +1,5 @@
 ---
+import { Image } from '@astrojs/image/components';
 import InvertirItems from './invertirItems.astro';
 import menHhats from '../../../public/assets/images/men-hats.jpg';
 ---
@@ -11,5 +12,6 @@ import menHhats from '../../../public/assets/images/men-hats.jpg';
     </h3>
     <InvertirItems />
   </section>
-  <img src={menHhats} alt="Men at construction site" class="my-12" />
+  <Image src={menHhats} alt="" class="my-12" format="avif" />
+  <!-- <img src={menHhats} alt="Men at construction site" class="my-12" /> -->
 </div>
