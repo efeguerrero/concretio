@@ -5,6 +5,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -21,6 +22,10 @@ summary,
 [type='submit'],
 [type='checkbox'] {
   cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* Custom TailWind Styles */

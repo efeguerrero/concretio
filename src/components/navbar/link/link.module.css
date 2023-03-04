@@ -1,0 +1,30 @@
+.link {
+  font-size: 1.124rem;
+  line-height: 1.75rem;
+  width: max-content;
+  padding: 0 0.5rem;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.link:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  content: '';
+  background: rgb(31, 41, 55);
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover:after {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}

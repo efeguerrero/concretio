@@ -6,6 +6,9 @@ export interface Props {
 const { title } = Astro.props;
 
 import '../styles/global.css';
+
+//Component Import
+import Navbar from '../components/navbar/Navbar.jsx';
 ---
 
 <!DOCTYPE html>
@@ -18,6 +21,7 @@ import '../styles/global.css';
     <title>{title}</title>
   </head>
   <body>
+    <Navbar client:idle />
     <slot />
   </body>
 </html>
