@@ -9,6 +9,7 @@ import '../styles/global.css';
 
 //Component Import
 import Navbar from '../components/navbar/Navbar.jsx';
+import Footer from '../components/footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -23,5 +24,6 @@ import Navbar from '../components/navbar/Navbar.jsx';
   <body>
     <Navbar client:idle />
     <slot />
+    <Footer />
   </body>
 </html>

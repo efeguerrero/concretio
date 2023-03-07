@@ -1,0 +1,79 @@
+---
+const arrowIcon = '../../../public/assets/icons/arrow.svg';
+
+let btnStyle;
+let iconStyle;
+
+const { style } = Astro.props;
+
+if (style == 'black') {
+  btnStyle = 'blackBtn';
+  iconStyle = 'iconWhite';
+} else if (style == 'white') {
+  btnStyle = 'whiteBtn';
+  iconStyle = 'iconBlack';
+} else {
+  btnStyle = 'blackBtn';
+  iconStyle = 'iconWhite';
+}
+---
+
+<button class={btnStyle}>
+  contactanos{' '}
+  <span>
+    <img class={iconStyle} src={arrowIcon} alt="Arrow Icon" />
+  </span>
+</button>
+
+<style>
+  .blackBtn,
+  .whiteBtn {
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    text-transform: uppercase;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .iconWhite {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(208deg)
+      brightness(102%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .whiteBtn {
+    background-color: white;
+    color: black;
+  }
+
+  .blackBtn {
+    background-color: black;
+    color: white;
+  }
+
+  .blackBtn:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .blackBtn:hover .iconWhite {
+    filter: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .whiteBtn:hover .iconBlack {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(208deg)
+      brightness(102%) contrast(102%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .whiteBtn:hover {
+    background-color: rgb(24, 24, 27);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+  }
+</style>

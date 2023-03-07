@@ -39,7 +39,7 @@ summary,
 }
 
 .section-text {
-  @apply font-normal text-lg font-montserrat;
+  @apply font-normal text-lg;
 }
 
 .btn {

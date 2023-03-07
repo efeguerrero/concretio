@@ -1,0 +1,28 @@
+---
+import { Image } from '@astrojs/image/components';
+import bakuLogo from '../../../public/assets/images/proyectos/baku/baku-logo.png';
+
+//Component Import
+import ContactButton from '../comunes/contactButton.astro';
+---
+
+<section>
+  <Image
+    src={bakuLogo}
+    alt=""
+    format="avif"
+    class="object-cover object-center"
+  />
+  <h3 class="font-light text-2xl text-gray-900 my-12">
+    BAKÚ boutique es la primera etapa de una innovadora propuesta arquitectónica
+    que se destaca por la creatividad de su diseño.
+  </h3>
+  <p class="font-normal mb-12 text-base font-franklin">
+    Contamos con departamentos de 1, 2 y 3 ambientes, donde cada usuario puede
+    <span class="text-[#9b7132] underline font-bold">
+      personalizar sus espacios de la manera más acorde a su estilo de vida</span
+    > y disfrutar de la tranquilidad y seguridad que brinda la zona dónde el edificio
+    se ubica.
+  </p>
+  <ContactButton style={'black'} />
+</section>

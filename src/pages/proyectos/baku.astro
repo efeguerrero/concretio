@@ -1,4 +1,13 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/blog/header.astro';
+const pageTitle = 'Baku';
 ---
 
-<h1>Baku Proyecto</h1>
+<Layout title={pageTitle}>
+  <section
+    class="container md:container mx-auto flex flex-col md:flex-row md:justify-center px-9 mt-14"
+  >
+    <Header />
+  </section>
+</Layout>
