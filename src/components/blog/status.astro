@@ -1,16 +1,33 @@
 ---
+const progreso = '65%';
+const entrega = 'Febrero 2023';
+const estado = 'En desarrollo';
+
+const barraProgreso = `left-[${progreso}]`;
 ---
 
-<div class="outerDiv">
-  <div class="">
-    <h2>Estado</h2>
-    <h3 class="font-semibold text-gray-700">En desarrollo</h3>
+<section>
+  <div class="outerDiv">
+    <div class="">
+      <h2>Estado</h2>
+      <h3 class="font-semibold text-gray-700">{estado}</h3>
+    </div>
+    <div>
+      <h2>Fecha de entrega estimada</h2>
+      <h3 class="font-semibold text-gray-700">{entrega}</h3>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-[0.2rem] mb-4 flex">
+      <div
+        class="bg-[#9b7132] h-[0.2rem] rounded-full"
+        style={`width:${progreso}`}
+      >
+      </div>
+      <h3 class="progressText text-[#9b7132] font-bold -translate-y-7">
+        {progreso}
+      </h3>
+    </div>
   </div>
-  <div>
-    <h2>Fecha de entrega estimada</h2>
-    <h3 class="font-semibold text-gray-700">Febrero 2023</h3>
-  </div>
-</div>
+</section>
 
 <style>
   .outerDiv {
@@ -23,5 +40,8 @@
     border-bottom: 1px;
     border-style: solid;
     border-color: rgb(188, 187, 187);
+  }
+
+  .progressText {
   }
 </style>
